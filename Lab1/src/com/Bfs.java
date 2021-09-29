@@ -4,20 +4,20 @@ import java.util.*;
 
 @SuppressWarnings("all")
 public class Bfs {
-    //private static int iterations = 0;
-    //private static int deleted = 0;
+    private static int iterations = 0;
+    private static int deleted = 0;
 
     public static void main(String[] args) {
         System.out.println("BFS Solution:");
         int[][] initialField = {
-                {0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 1, 0, 0, 1, 0, 0, 0},
-                {0, 0, 0, 0, 0, 0, 1, 0},
-                {0, 0, 0, 0, 0, 0, 0, 1},
-                {0, 0, 0, 0, 0, 0, 0, 0},
-                {1, 0, 0, 0, 0, 1, 0, 0},
-                {0, 0, 1, 0, 0, 0, 0, 0},
+                {0, 0, 1, 0, 0, 0, 0, 1},
+                {0, 0, 0, 0, 0, 1, 0, 0},
                 {0, 0, 0, 1, 0, 0, 0, 0},
+                {1, 0, 0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 1},
+                {0, 0, 0, 0, 1, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 1, 0},
+                {0, 1, 0, 0, 0, 0, 0, 0},
         };
         printField(bfs(initialField));
     }
@@ -30,16 +30,16 @@ public class Bfs {
 
     public static int[][] bfsRecursive(Queue<Node> queue) {
         for (Node node : queue) {
-            /*deleted++;
+            deleted++;
             System.out.println("--------");
-            System.out.println(deleted);
-            System.out.println(iterations);
-            System.out.println(queue.size());*/
+            System.out.println("deleted " + deleted);
+            System.out.println("iterations  " + iterations);
+            System.out.println("queue.size()    " + queue.size());
             if (!checkConflict(node.field)) {
-                /*System.out.println("--------");
-                System.out.println(deleted);
-                System.out.println(iterations);
-                System.out.println(queue.size());*/
+                System.out.println("--------");
+                System.out.println("deleted " + deleted);
+                System.out.println("iterations  " + iterations);
+                System.out.println("queue.size()    " + queue.size());
                 return node.field;
             }
         }
@@ -48,11 +48,11 @@ public class Bfs {
             Node node = queue.poll();
             expand(queue, node);
         }
-        /*iterations++;
+        iterations++;
         System.out.println("--------");
-        System.out.println(deleted);
-        System.out.println(iterations);
-        System.out.println(queue.size());*/
+        System.out.println("deleted " + deleted);
+        System.out.println("iterations  " + iterations);
+        System.out.println("queue.size()    " + queue.size());
         return bfsRecursive(queue);
     }
 
@@ -275,3 +275,20 @@ public class Bfs {
         System.out.println();
     }
 }
+
+
+    /*int[][] bfs(field : int[][] ):
+        queue = ArrayDeque<>()
+        queue.offer(Node(field))
+        return bfsRecursive(queue)
+
+    int[][] bfsRecursive(queue : Queue<Node> ):
+        for node in queue
+            if !checkConflict(node.field)
+                return node.field
+        size = queue.size
+        for i in size
+            node = queue.poll()
+            expand(queue, node)
+        iterations + 1
+        return bfsRecursive(queue)*/

@@ -14,14 +14,14 @@ public class StarA {
     public static void main(String[] args) {
         System.out.println("A* Solution:");
         int[][] initialField = {
+                {0, 1, 0, 0, 0, 0, 0, 1},
                 {0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 1, 0, 0, 1, 0, 0, 0},
-                {0, 0, 0, 0, 0, 0, 1, 0},
-                {0, 0, 0, 0, 0, 0, 0, 1},
+                {0, 0, 0, 0, 1, 0, 1, 0},
                 {0, 0, 0, 0, 0, 0, 0, 0},
-                {1, 0, 0, 0, 0, 1, 0, 0},
-                {0, 0, 1, 0, 0, 0, 0, 0},
+                {0, 0, 1, 0, 0, 1, 0, 0},
                 {0, 0, 0, 1, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 0},
+                {1, 0, 0, 0, 0, 0, 0, 0},
         };
         Bfs.printField(aStar(initialField));
     }
@@ -35,9 +35,9 @@ public class StarA {
     public static int[][] aStarRecursive(Queue<Bfs.Node> queue) {
         Bfs.Node node = queue.poll();
         System.out.println("--------");
-        System.out.println(closed.size());
-        System.out.println(iterations);
-        System.out.println(queue.size());
+        System.out.println("closed.size()   " + closed.size());
+        System.out.println("iterations  " + iterations);
+        System.out.println("queue.size()    " + queue.size());
         if (closed.contains(node)) {
             return aStarRecursive(queue);
         }
@@ -50,3 +50,19 @@ public class StarA {
         return aStarRecursive(queue);
     }
 }
+
+    /*int[][] aStar(field : int[][]):
+        queue = PriorityQueue<>()
+        queue.offer(Bfs.Node(field, 0))
+        return aStarRecursive(queue)
+
+    int[][] aStarRecursive(queue : Queue<Bfs.Node>):
+        node = queue.poll();
+        if closed.contains(node)
+            return aStarRecursive(queue)
+        closed.add(node)
+        if !Bfs.checkConflict(node.field)
+            return node.field
+        Bfs.expand(queue, node, true)
+        iterations + 1
+        return aStarRecursive(queue)*/
