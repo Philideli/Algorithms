@@ -36,6 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab2" />
   </component>
   <component name="RunManager" selected="Application.Bfs">
     <configuration name="Bfs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -77,17 +78,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Bfs" />
@@ -104,7 +94,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632901740327</updated>
-      <workItem from="1632901742243" duration="9726000" />
+      <workItem from="1632901742243" duration="10183000" />
+      <workItem from="1634625082627" duration="37000" />
+      <workItem from="1634892288248" duration="4970000" />
     </task>
     <servers />
   </component>

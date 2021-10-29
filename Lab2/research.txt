@@ -1,0 +1,147 @@
+//100
+Key: 59
+Iter: 1
+Value: 22
+
+
+Key: 16
+Iter: 4
+Value: 41
+
+
+Key: 23
+Iter: 3
+Value: 94
+
+
+Key: 13
+Iter: 4
+Value: 9
+
+
+Key: 29
+Iter: 3
+Value: 39
+
+
+Key: 85
+Iter: 4
+Value: 23
+
+
+Key: 9
+Iter: 4
+Value: 72
+
+
+Key: 28
+Iter: 3
+Value: 38
+
+
+Key: 46
+Iter: 4
+Value: 84
+
+
+Key: 53
+Iter: 3
+Value: 73
+
+
+Key: 17
+Iter: 4
+Value: 51
+
+
+Key: 51
+Iter: 1
+Value: 35
+
+
+Key: 32
+Value: 14
+
+
+Key: 29
+Iter: 3
+Value: 39
+
+
+Key: 16
+Iter: 4
+Value: 41
+
+
+
+//10000
+
+Key: 4006
+Iter: 7
+Value: 7923
+
+
+Key: 8189
+Iter: 8
+Value: 5558
+
+
+Key: 3168
+Value: 3898
+
+
+Key: 9848
+Iter: 8
+Value: 9249
+
+
+Key: 8645
+Iter: 7
+Value: 6769
+
+
+Key: 157
+Iter: 8
+Value: 4830
+
+
+Key: 9831
+Iter: 8
+Value: 88
+
+
+Key: 9663
+Iter: 7
+Value: 4823
+
+
+Key: 2937
+Value: 3882
+
+
+Key: 13
+Iter: 9
+Value: 7438
+
+
+Key: 2022
+Value: 3896
+
+
+Key: 687
+Value: 984
+
+
+Key: 2384
+Value: 3888
+
+
+Key: 6489
+Iter: 6
+Value: 7729
+
+
+Key: 9788
+Iter: 8
+Value: 5449
+
